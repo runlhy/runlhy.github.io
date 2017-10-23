@@ -1,0 +1,742 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+    <meta name="description" content="人在江湖飘，狐朋狗友再多也是寂寞，兄弟只有几枚哥们只有几个也销魂啊" />
+
+
+
+  <meta name="keywords" content="Markdown," />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。 
+
+
+1. 斜体与粗体_斜体_   __粗体__ *斜体*   **粗体**
+斜体   粗体斜体   粗体
+
+2.字体、字号与颜色,背景色(h5标签)&amp;lt;font face=&amp;quot;STCAIYUN&amp;quot;&amp;gt;华文彩云&amp;lt;/font&amp;gt;
+
+&amp;lt;font co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown 快速入门">
+<meta property="og:url" content="http://yoursite.com/2015/12/01/markdown-快速入门/index.html">
+<meta property="og:site_name" content="通向自由">
+<meta property="og:description" content="Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。 
+
+
+1. 斜体与粗体_斜体_   __粗体__ *斜体*   **粗体**
+斜体   粗体斜体   粗体
+
+2.字体、字号与颜色,背景色(h5标签)&amp;lt;font face=&amp;quot;STCAIYUN&amp;quot;&amp;gt;华文彩云&amp;lt;/font&amp;gt;
+
+&amp;lt;font co">
+<meta property="og:image" content="http://i5.tietuku.com/4f536654beee63bf.png">
+<meta property="og:updated_time" content="2015-12-08T07:12:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="markdown 快速入门">
+<meta name="twitter:description" content="Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。 
+
+
+1. 斜体与粗体_斜体_   __粗体__ *斜体*   **粗体**
+斜体   粗体斜体   粗体
+
+2.字体、字号与颜色,背景色(h5标签)&amp;lt;font face=&amp;quot;STCAIYUN&amp;quot;&amp;gt;华文彩云&amp;lt;/font&amp;gt;
+
+&amp;lt;font co">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post'
+  };
+</script>
+
+  <title> markdown 快速入门 | 通向自由 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">通向自由</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              markdown 快速入门
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-12-01T19:57:12+08:00" content="2015-12-01">
+            2015-12-01
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/博客/" itemprop="url" rel="index">
+                  <span itemprop="name">博客</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/12/01/markdown-快速入门/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/01/markdown-快速入门/" itemprop="commentsCount"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><blockquote>
+<p><strong>Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</strong> </p>
+</blockquote>
+<hr>
+<h3 id="1-__u659C_u4F53_u4E0E_u7C97_u4F53"><a href="#1-__u659C_u4F53_u4E0E_u7C97_u4F53" class="headerlink" title="1. 斜体与粗体"></a>1. <strong>斜体与粗体</strong></h3><p><code>_斜体_   __粗体__ *斜体*   **粗体**</code></p>
+<p><em>斜体</em>   <strong>粗体</strong><br><em>斜体</em>   <strong>粗体</strong></p>
+<hr>
+<h3 id="2-_u5B57_u4F53_u3001_u5B57_u53F7_u4E0E_u989C_u8272_2C_u80CC_u666F_u8272_28h5_u6807_u7B7E_29"><a href="#2-_u5B57_u4F53_u3001_u5B57_u53F7_u4E0E_u989C_u8272_2C_u80CC_u666F_u8272_28h5_u6807_u7B7E_29" class="headerlink" title="2.字体、字号与颜色,背景色(h5标签)"></a>2.<strong>字体、字号与颜色,背景色(h5标签)</strong></h3><pre><code>&lt;font face=&quot;STCAIYUN&quot;&gt;华文彩云&lt;/font&gt;
+
+&lt;font color=gray size=5&gt;color=gray&lt;/font&gt;
+
+&lt;font color=#0099ff size=5 face=&quot;黑体&quot;&gt;color=#0099ff size=5 face=&quot;黑体&quot;&lt;/font&gt;
+</code></pre><p>Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3。</p>
+<ul>
+<li>呈现效果如下<br><font face="STCAIYUN">华文彩云</font><br><br><font color="gray" size="5">color=gray</font><br><br><font color="#0099ff" size="5" face="黑体">color=#0099ff size=5 face=”黑体”</font><br></li>
+<li><p>背景色<br><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#FF4500&gt;这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></p>
+</li>
+<li><p>呈现效果如下</p>
+<table><tr><td bgcolor="#FF4500">这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)</td></tr></table>
+
+</li>
+</ul>
+<hr>
+<h3 id="3-__u94FE_u63A5"><a href="#3-__u94FE_u63A5" class="headerlink" title="3. 链接"></a>3. 链接</h3><ul>
+<li><strong>超链接</strong><br><a href="https://google.com" target="_blank" rel="external">google</a>搜索<a href="https://baidu.com" target="_blank" rel="external">百度</a>搜索</li>
+</ul>
+<p><code>[google] (https://google.com)搜索[百度] (https://baidu.com )搜索</code></p>
+<p>中括号中放名称，小括号放地址</p>
+<ul>
+<li><strong>email</strong></li>
+</ul>
+<p><code>一个 email &lt;example@example.com&gt; 链接.</code></p>
+<p>一个 email <a href="&#x6d;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#64;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#x65;&#64;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a> 链接.<br>将email地址放入尖括号中</p>
+<hr>
+<h3 id="4-_u56FE_u7247"><a href="#4-_u56FE_u7247" class="headerlink" title="4.图片"></a>4.<strong>图片</strong></h3><ul>
+<li><p><strong>放到图床上</strong><br><a href="http://yotuku.cn/" target="_blank" rel="external">七牛云</a><br><a href="http://m.yea.im/" target="_blank" rel="external">外链图床</a></p>
+</li>
+<li><p><strong>插入图片</strong><br><code>&lt;font color=gray size=3&gt; ![alt text]\(http://i5.tietuku.com/4f536654beee63bf.png &quot;Title&quot;) &lt;/font&gt;</code><br><img src="http://i5.tietuku.com/4f536654beee63bf.png" alt="alt text" title="Title"><br><font color="gray" size="3"> 对于超链只是多了一个叹号如果需要自定义图片大小可以直接使用html语言 </font><br><code>&lt;img src=&quot;图片地址&quot; width = &quot;300&quot; height = &quot;200&quot; alt=&quot;图片名称&quot; align=center&gt;</code></p>
+</li>
+</ul>
+<hr>
+<h3 id="5-_u5217_u8868"><a href="#5-_u5217_u8868" class="headerlink" title="5.列表"></a>5.<strong>列表</strong></h3><ul>
+<li>无序列表<br><code>* 无序列表 - 无序列表   + 无序列表</code><ul>
+<li>无序列表</li>
+</ul>
+<ul>
+<li>无序列表</li>
+</ul>
+<ul>
+<li>无序列表<br><br></li>
+</ul>
+</li>
+<li>有序列表<br><code>1. 有序列表 2. 有序列表   3. 有序列表</code></li>
+</ul>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Markdown/" rel="tag">#Markdown</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/08/单例模式（Singleton-pattern）/" rel="prev">单例模式（Singleton pattern）</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/01/当我谈跑步时我谈些什么/" rel="next">当我谈跑步时我谈些什么</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+
+        
+          <div class="comments" id="comments">
+            
+              <div id="disqus_thread">
+                <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
+            
+          </div>
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/amumu.jpg" alt="李海元" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">李海元</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">人在江湖飘，狐朋狗友再多也是寂寞，兄弟只有几枚哥们只有几个也销魂啊</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="runlhy" target="_blank">github</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-__u659C_u4F53_u4E0E_u7C97_u4F53"><span class="nav-number">1.</span> <span class="nav-text">1. 斜体与粗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_u5B57_u4F53_u3001_u5B57_u53F7_u4E0E_u989C_u8272_2C_u80CC_u666F_u8272_28h5_u6807_u7B7E_29"><span class="nav-number">2.</span> <span class="nav-text">2.字体、字号与颜色,背景色(h5标签)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-__u94FE_u63A5"><span class="nav-number">3.</span> <span class="nav-text">3. 链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-_u56FE_u7247"><span class="nav-number">4.</span> <span class="nav-text">4.图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-_u5217_u8868"><span class="nav-number">5.</span> <span class="nav-text">5.列表</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp;  2014 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李海元</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+    
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'lihaiyuan';
+      var disqus_identifier = '2015/12/01/markdown-快速入门/';
+      var disqus_title = 'markdown 快速入门';
+      var disqus_url = 'http://yoursite.com/2015/12/01/markdown-快速入门/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
