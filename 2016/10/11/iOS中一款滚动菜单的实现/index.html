@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="Markdown," />
+  <meta name="keywords" content="iOS UI," />
 
 
 
@@ -39,41 +39,53 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。 
+<meta name="description" content="滚动菜单是app展示数据常用的控件，使用频率极高，实现的过程就是对UIScrollView的应用，大体都是顶部一个标题滚动视图，下边一个用来铺显示数据的View的滚动视图，然后实现联动效果，基本差不多了。
+##需求分析
+
+从笔者安装的应用上观察，大体要实现功能标题下划线自适应，菜单的半透明，左右的不同按钮（参考优酷，网易云音乐）。
 
 
-1. 斜体与粗体_斜体_   __粗体__ *斜体*   **粗体**
-斜体   粗体斜体   粗体
 
-2.字体、字号与颜色,背景色(h5标签)&amp;lt;font face=&amp;quot;STCAIYUN&amp;quot;&amp;gt;华文彩云&amp;lt;/font&amp;gt;
+##实现
 
-&amp;lt;font co">
+总思想将标题视图，展示数据的视图放到一个View">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown 快速入门">
-<meta property="og:url" content="http://yoursite.com/2015/12/01/markdown-快速入门/index.html">
+<meta property="og:title" content="iOS中的一款滚动菜单的实现">
+<meta property="og:url" content="http://yoursite.com/2016/10/11/iOS中一款滚动菜单的实现/index.html">
 <meta property="og:site_name" content="通向自由">
-<meta property="og:description" content="Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。 
+<meta property="og:description" content="滚动菜单是app展示数据常用的控件，使用频率极高，实现的过程就是对UIScrollView的应用，大体都是顶部一个标题滚动视图，下边一个用来铺显示数据的View的滚动视图，然后实现联动效果，基本差不多了。
+##需求分析
+
+从笔者安装的应用上观察，大体要实现功能标题下划线自适应，菜单的半透明，左右的不同按钮（参考优酷，网易云音乐）。
 
 
-1. 斜体与粗体_斜体_   __粗体__ *斜体*   **粗体**
-斜体   粗体斜体   粗体
 
-2.字体、字号与颜色,背景色(h5标签)&amp;lt;font face=&amp;quot;STCAIYUN&amp;quot;&amp;gt;华文彩云&amp;lt;/font&amp;gt;
+##实现
 
-&amp;lt;font co">
-<meta property="og:image" content="http://i5.tietuku.com/4f536654beee63bf.png">
-<meta property="og:updated_time" content="2015-12-08T07:12:48.000Z">
+总思想将标题视图，展示数据的视图放到一个View">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-e671b4e4556682b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-de0a57a4b73a843c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-49a2562163f2afa2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-b74efb26ec68f4be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-aeca45b71479ec12.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-1358a31559f7d47c.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-359466ab92244108.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-e905d58548e59b82.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-5a42faa4b377b337.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1155795-217300c36772e630.gif?imageMogr2/auto-orient/strip">
+<meta property="og:updated_time" content="2017-10-23T15:30:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="markdown 快速入门">
-<meta name="twitter:description" content="Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。 
+<meta name="twitter:title" content="iOS中的一款滚动菜单的实现">
+<meta name="twitter:description" content="滚动菜单是app展示数据常用的控件，使用频率极高，实现的过程就是对UIScrollView的应用，大体都是顶部一个标题滚动视图，下边一个用来铺显示数据的View的滚动视图，然后实现联动效果，基本差不多了。
+##需求分析
+
+从笔者安装的应用上观察，大体要实现功能标题下划线自适应，菜单的半透明，左右的不同按钮（参考优酷，网易云音乐）。
 
 
-1. 斜体与粗体_斜体_   __粗体__ *斜体*   **粗体**
-斜体   粗体斜体   粗体
 
-2.字体、字号与颜色,背景色(h5标签)&amp;lt;font face=&amp;quot;STCAIYUN&amp;quot;&amp;gt;华文彩云&amp;lt;/font&amp;gt;
+##实现
 
-&amp;lt;font co">
+总思想将标题视图，展示数据的视图放到一个View">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -83,7 +95,7 @@
   };
 </script>
 
-  <title> markdown 快速入门 | 通向自由 </title>
+  <title> iOS中的一款滚动菜单的实现 | 通向自由 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -190,7 +202,7 @@
           
           
             
-              markdown 快速入门
+              iOS中的一款滚动菜单的实现
             
           
         </h1>
@@ -199,8 +211,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-12-01T19:57:12+08:00" content="2015-12-01">
-            2015-12-01
+          <time itemprop="dateCreated" datetime="2016-10-11T13:45:00+08:00" content="2016-10-11">
+            2016-10-11
           </time>
         </span>
 
@@ -209,8 +221,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/博客/" itemprop="url" rel="index">
-                  <span itemprop="name">博客</span>
+                <a href="/categories/iOS/" itemprop="url" rel="index">
+                  <span itemprop="name">iOS</span>
                 </a>
               </span>
 
@@ -225,8 +237,8 @@
           
             <span class="post-comments-count">
             &nbsp; | &nbsp;
-            <a href="/2015/12/01/markdown-快速入门/#comments" itemprop="discussionUrl">
-              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/01/markdown-快速入门/" itemprop="commentsCount"></span>
+            <a href="/2016/10/11/iOS中一款滚动菜单的实现/#comments" itemprop="discussionUrl">
+              <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/10/11/iOS中一款滚动菜单的实现/" itemprop="commentsCount"></span>
             </a>
           </span>
           
@@ -240,65 +252,48 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p><strong>Markdown 是一种轻量级的「标记语言」，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。</strong> </p>
-</blockquote>
-<hr>
-<h3 id="1-__u659C_u4F53_u4E0E_u7C97_u4F53"><a href="#1-__u659C_u4F53_u4E0E_u7C97_u4F53" class="headerlink" title="1. 斜体与粗体"></a>1. <strong>斜体与粗体</strong></h3><p><code>_斜体_   __粗体__ *斜体*   **粗体**</code></p>
-<p><em>斜体</em>   <strong>粗体</strong><br><em>斜体</em>   <strong>粗体</strong></p>
-<hr>
-<h3 id="2-_u5B57_u4F53_u3001_u5B57_u53F7_u4E0E_u989C_u8272_2C_u80CC_u666F_u8272_28h5_u6807_u7B7E_29"><a href="#2-_u5B57_u4F53_u3001_u5B57_u53F7_u4E0E_u989C_u8272_2C_u80CC_u666F_u8272_28h5_u6807_u7B7E_29" class="headerlink" title="2.字体、字号与颜色,背景色(h5标签)"></a>2.<strong>字体、字号与颜色,背景色(h5标签)</strong></h3><pre><code>&lt;font face=&quot;STCAIYUN&quot;&gt;华文彩云&lt;/font&gt;
-
-&lt;font color=gray size=5&gt;color=gray&lt;/font&gt;
-
-&lt;font color=#0099ff size=5 face=&quot;黑体&quot;&gt;color=#0099ff size=5 face=&quot;黑体&quot;&lt;/font&gt;
-</code></pre><p>Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3。</p>
+        <span itemprop="articleBody"><p>滚动菜单是app展示数据常用的控件，使用频率极高，实现的过程就是对UIScrollView的应用，大体都是顶部一个标题滚动视图，下边一个用来铺显示数据的View的滚动视图，然后实现联动效果，基本差不多了。</p>
+<p>##需求分析</p>
 <ul>
-<li>呈现效果如下<br><font face="STCAIYUN">华文彩云</font><br><br><font color="gray" size="5">color=gray</font><br><br><font color="#0099ff" size="5" face="黑体">color=#0099ff size=5 face=”黑体”</font><br></li>
-<li><p>背景色<br><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#FF4500&gt;这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></p>
-</li>
-<li><p>呈现效果如下</p>
-<table><tr><td bgcolor="#FF4500">这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)</td></tr></table>
-
-</li>
+<li>从笔者安装的应用上观察，大体要实现功能<strong>标题下划线自适应</strong>，<strong>菜单的半透明</strong>，<strong>左右的不同按钮</strong>（参考优酷，网易云音乐）。</li>
 </ul>
-<hr>
-<h3 id="3-__u94FE_u63A5"><a href="#3-__u94FE_u63A5" class="headerlink" title="3. 链接"></a>3. 链接</h3><ul>
-<li><strong>超链接</strong><br><a href="https://google.com" target="_blank" rel="external">google</a>搜索<a href="https://baidu.com" target="_blank" rel="external">百度</a>搜索</li>
-</ul>
-<p><code>[google] (https://google.com)搜索[百度] (https://baidu.com )搜索</code></p>
-<p>中括号中放名称，小括号放地址</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-e671b4e4556682b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-10-11 10.31.31.png"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-de0a57a4b73a843c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-10-11 10.26.41.png"><br><img src="http://upload-images.jianshu.io/upload_images/1155795-49a2562163f2afa2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-10-11 10.26.53.png"></p>
+<p>##实现</p>
 <ul>
-<li><strong>email</strong></li>
+<li><strong>总思想</strong><br>将标题视图，展示数据的视图放到一个View 上,View 来管理不同的子视图的滑动，子视图由各自的控制管理，要做的就是封装好这个视图，名字就叫HYPageView。</li>
 </ul>
-<p><code>一个 email &lt;example@example.com&gt; 链接.</code></p>
-<p>一个 email <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x65;&#120;&#97;&#109;&#112;&#108;&#x65;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x65;&#120;&#97;&#109;&#112;&#108;&#x65;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;</a> 链接.<br>将email地址放入尖括号中</p>
-<hr>
-<h3 id="4-_u56FE_u7247"><a href="#4-_u56FE_u7247" class="headerlink" title="4.图片"></a>4.<strong>图片</strong></h3><ul>
-<li><p><strong>放到图床上</strong><br><a href="http://yotuku.cn/" target="_blank" rel="external">七牛云</a><br><a href="http://m.yea.im/" target="_blank" rel="external">外链图床</a></p>
-</li>
-<li><p><strong>插入图片</strong><br><code>&lt;font color=gray size=3&gt; ![alt text]\(http://i5.tietuku.com/4f536654beee63bf.png &quot;Title&quot;) &lt;/font&gt;</code><br><img src="http://i5.tietuku.com/4f536654beee63bf.png" alt="alt text" title="Title"><br><font color="gray" size="3"> 对于超链只是多了一个叹号如果需要自定义图片大小可以直接使用html语言 </font><br><code>&lt;img src=&quot;图片地址&quot; width = &quot;300&quot; height = &quot;200&quot; alt=&quot;图片名称&quot; align=center&gt;</code></p>
-</li>
-</ul>
-<hr>
-<h3 id="5-_u5217_u8868"><a href="#5-_u5217_u8868" class="headerlink" title="5.列表"></a>5.<strong>列表</strong></h3><ul>
-<li>无序列表<br><code>* 无序列表 - 无序列表   + 无序列表</code><ul>
-<li>无序列表</li>
-</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-b74efb26ec68f4be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-10-11 10.53.26.png"><br>简单的说就是把控制器的View放到scrollView,滑到某一页，就加载某一页的控制器，并且将控制器的View放到这一页。需要注意的是，<strong>创建的控制器必需要强引用，因为局部变量会导致”控制器死掉”</strong>造成控制器里边所有事件无法响应，比如tabView没有Cell，Button点上去没反应等等，都是因为控制器从内存释放了。</p>
 <ul>
-<li>无序列表</li>
+<li><strong>下划线自适应</strong></li>
 </ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-aeca45b71479ec12.gif?imageMogr2/auto-orient/strip" alt="HYPageView00.gif"></p>
+<p>就是一边滑，一边动，根据当前滑动的位置改变线条的位置，线条的长度也总是趋于下一个位置的长度，这种很细节的东西吸引了笔者，如何实现呢？</p>
+<p>需要计算两点<strong>位置</strong>，<strong>长度</strong>；</p>
 <ul>
-<li>无序列表<br><br></li>
+<li>方法1(坑)<br>首先想到是 <strong>计算相对偏移量</strong>，我们总是能知道当前位置和下一个位置，只要计算线条位置相对与手指拖拽的位置的偏移量，通过加减就可以算出准确的位置，线条的长度一个道理。感觉有点麻烦，但我尝试的这么做了。<br>在UIScrollViewDelegate 里的scrollViewDidScroll 方法中算出并记录每一次偏移量，然后累计到下划线上，结果是效果差不多。但总是有误差，误差的原因是误差累计，与越界，前者是在计算的过程精度的丢失，多次累加产生的误差，后者是在滑动的过程，结束的位置不会保证是下一个位置的结束点，我也尝试的修复这种误差，但滑的越快误差就越大。然后我就尝试寻找更好的方法。</li>
 </ul>
-</li>
-<li>有序列表<br><code>1. 有序列表 2. 有序列表   3. 有序列表</code></li>
+<p>找到了一个例子，和方法1的坑一毛一样<br>传送门👉<strong><a href="http://www.jianshu.com/p/b45655e23a42" target="_blank" rel="external">快速集成App中顶部标题滚动条</a></strong></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-1358a31559f7d47c.gif?imageMogr2/auto-orient/strip" alt="反例1.gif"><br>越来长的原因：可能是越界的问题，从图中可以看出，在返回自身位置时是一个累减的过程，而返回的最后一段距离终点不一定恰好是零界点，这段长度可能没有减去，拖着不放，误差越来越大。从图中也可以看出作者在结束滚动时对线条进行了校正。</p>
+<ul>
+<li>方法2<br>想要精确无误，就想到了利用<strong>数学的知识</strong>来解决，通过观察想到了<strong>contentOffset 的值与线条点的位置唯一对应</strong>，也就是说<strong>线条点的位置是关于contentOffset的一个函数</strong>，不难发现就是一个<strong>分段函数</strong>，而且每一段都是一个 一次函数 形如<strong>y=kx+b</strong> 这里<strong>x 是 contentOffset</strong> ，<strong>y 是 线条的点或长度</strong>，写一个方法，传入contentOffset返回点的位置或线条的宽度，显然要一组k与b，而k 与 b 在 构造标题位置的就可以计算出来 k = △y/△x ，得到k后b也可以得到。<br>然后在<figure class="highlight"><figcaption><span>(void)scrollViewDidScroll:(UIScrollView *)scrollView;```方法里只有两行代码</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&#10;_lineBottom.center = CGPointMake([self getTitleWidth:scrollView.contentOffset.x], _lineBottom.center.y);&#10;_lineBottom.bounds = CGRectMake(0, 0, [self getTitlePoint:scrollView.contentOffset.x], LINEBOTTOM_HEIGHT);</span><br></pre></td></tr></table></figure></li>
 </ul>
-<ol>
-<li>有序列表</li>
-<li>有序列表</li>
-<li>有序列表</li>
-</ol>
+<p>计算的代码</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#pragma mark - Calculation Method</span></span><br><span class="line"></span><br><span class="line">- (<span class="built_in">CGFloat</span>)getTitleWidth:(<span class="built_in">CGFloat</span>)offset&#123;</span><br><span class="line">    <span class="built_in">NSInteger</span> index = (<span class="built_in">NSInteger</span>)(offset / _selfFrame<span class="variable">.size</span><span class="variable">.width</span>);</span><br><span class="line">    <span class="built_in">CGFloat</span> k = [_width_k_array[index] floatValue];</span><br><span class="line">    <span class="built_in">CGFloat</span> b = [_width_b_array[index] floatValue];</span><br><span class="line">    <span class="built_in">CGFloat</span> x = offset;</span><br><span class="line">    <span class="keyword">return</span>  k * x + b;</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="built_in">CGFloat</span>)getTitlePoint:(<span class="built_in">CGFloat</span>)offset&#123;</span><br><span class="line">    <span class="built_in">NSInteger</span> index = (<span class="built_in">NSInteger</span>)(offset / _selfFrame<span class="variable">.size</span><span class="variable">.width</span>);</span><br><span class="line">    <span class="built_in">CGFloat</span> k = [_point_k_array[index] floatValue];</span><br><span class="line">    <span class="built_in">CGFloat</span> b = [_point_b_array[index] floatValue];</span><br><span class="line">    <span class="built_in">CGFloat</span> x = offset;</span><br><span class="line">    <span class="keyword">return</span>  k * x + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样就达到完美的线条自适应效果如下：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-359466ab92244108.gif?imageMogr2/auto-orient/strip" alt="HYPageView03.gif"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-e905d58548e59b82.gif?imageMogr2/auto-orient/strip" alt="HYPageView08.gif"></p>
+<ul>
+<li><strong>菜单的半透明</strong><br>菜单的半透明很简单，设置好ScrollView的contentInset和frame就好了，需要注意的是有navigationController时控制器的automaticallyAdjustsScrollViewInsets 属性 和 edgesForExtendedLayout属性在开启navigationBar 半透明效果时 navigationController会对 控制器的 contentInset 和 frame进行调整 以达到半透明效果。</li>
+<li><strong>左右的不同按钮</strong><br>前边的步骤做好了这里也很简单，设计可以根据navigationBar 的左右item来设计。笔者直接添加Button然后重新计算顶部菜单滚动视图的宽，效果如下：</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-5a42faa4b377b337.gif?imageMogr2/auto-orient/strip" alt="HYPageView05.gif"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1155795-217300c36772e630.gif?imageMogr2/auto-orient/strip" alt="HYPageView06.gif"></p>
+<ul>
+<li><strong>接口的设计</strong></li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/**&#10; Initializes and returns a newly allocated view object with the specified frame rectangle.&#10; &#10; @param frame       ...&#10; @param titles      Some title&#10; @param controllers Name of some controllers&#10; @param parameters  You need to set a property called &#34;parameter&#34; for your controller to receive.&#10;&#10; @return self&#10; */&#10;- (instancetype)initWithFrame:(CGRect)frame withTitles:(NSArray *)titles withViewControllers:(NSArray *)controllers withParameters:(NSArray *)parameters;</span><br></pre></td></tr></table></figure>
+<p>frame，titles 不用说，controllers是传控制器的名称，这样可以在需要的时候再创建控制器，parameters是要给控制器传的参数，传递的方式是KVC,当然传递的时候需要检查参数是否存在，控制器是否有parameters参数，具体实现可以看demo。<br><a href="https://github.com/runlhy/HYPageView" target="_blank" rel="external">https://github.com/runlhy/HYPageView</a></p>
 </span>
       
     </div>
@@ -307,7 +302,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Markdown/" rel="tag">#Markdown</a>
+            <a href="/tags/iOS-UI/" rel="tag">#iOS UI</a>
           
         </div>
       
@@ -316,13 +311,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/12/08/单例模式（Singleton-pattern）/" rel="prev">单例模式（Singleton pattern）</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/01/当我谈跑步时我谈些什么/" rel="next">当我谈跑步时我谈些什么</a>
+              <a href="/2016/03/06/关于我死皮赖脸获得一周试用的事情/" rel="next">关于我死皮赖脸获得一周试用的事情</a>
             
           </div>
         </div>
@@ -436,7 +429,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-__u659C_u4F53_u4E0E_u7C97_u4F53"><span class="nav-number">1.</span> <span class="nav-text">1. 斜体与粗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-_u5B57_u4F53_u3001_u5B57_u53F7_u4E0E_u989C_u8272_2C_u80CC_u666F_u8272_28h5_u6807_u7B7E_29"><span class="nav-number">2.</span> <span class="nav-text">2.字体、字号与颜色,背景色(h5标签)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-__u94FE_u63A5"><span class="nav-number">3.</span> <span class="nav-text">3. 链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-_u56FE_u7247"><span class="nav-number">4.</span> <span class="nav-text">4.图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-_u5217_u8868"><span class="nav-number">5.</span> <span class="nav-text">5.列表</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -490,9 +483,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'lihaiyuan';
-      var disqus_identifier = '2015/12/01/markdown-快速入门/';
-      var disqus_title = 'markdown 快速入门';
-      var disqus_url = 'http://yoursite.com/2015/12/01/markdown-快速入门/';
+      var disqus_identifier = '2016/10/11/iOS中一款滚动菜单的实现/';
+      var disqus_title = 'iOS中的一款滚动菜单的实现';
+      var disqus_url = 'http://yoursite.com/2016/10/11/iOS中一款滚动菜单的实现/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
